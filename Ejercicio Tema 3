@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        int val1 = 4; // primer valor de suma
+        int val2 = 2; // segundo valor de suma
+        int val3 = 4; // Tercer valor de suma
+        int resultado;
+        resultado = suma(val1,val2,val3);
+        Coche miCoche = new Coche();
+        miCoche.SumaPuerta();
+        System.out.println(resultado);
+        System.out.println(miCoche.puertas);
+    }
+    public static int suma(int a, int b, int c) {
+        return a + b + c;
+    }
+
+static class Coche {
+        public int puertas = 0;
+        public void SumaPuerta() {
+            this.puertas++;
+        }
+    }
+}
